@@ -1,2 +1,2 @@
 # gameboxtui
-An retro arcade game library for the terminal
+A retro arcade game library for the terminal

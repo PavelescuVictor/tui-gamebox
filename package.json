@@ -1,0 +1,26 @@
+{
+  "name": "gameboxtui",
+  "version": "0.0.1",
+  "description": "A gamebox tui with multiple retro games",
+  "keywords": ["retro, games, tui"],
+  "author": "Victor Pavelescu",
+  "type": "module",
+  "module": "src/main.tsx",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch src/index.tsx"
+  },
+  "packageManager": "pnpm@10.18.3",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.1.84",
+    "@opentui/react": "^0.1.84",
+    "@types/react": "^19.2.14",
+    "react": "^19.2.4"
+  }
+}

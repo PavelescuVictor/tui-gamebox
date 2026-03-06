@@ -1,18 +1,8 @@
 import { BorderBox } from "core/components";
+import Pong from "games/Snake/Snake";
 
 const App = () => {
-    return (
-        <BorderBox
-            style={{
-                alignItems: "center",
-                justifyContent: "center",
-                flexGrow: 1,
-            }}
-        >
-            <text>GameBox</text>
-            <text>Description</text>
-        </BorderBox>
-    );
+    return (<Pong />);
 };
 
 export default App;

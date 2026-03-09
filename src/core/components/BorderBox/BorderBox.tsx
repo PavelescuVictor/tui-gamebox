@@ -1,7 +1,8 @@
-import type { BoxOptions } from "@opentui/core";
+import type { BoxOptions, } from "@opentui/core";
+import type { PropsWithChildren } from 'react';
 import { DefaultTheme } from "core/themes";
 
-const DefaultStyles: Partial<BoxOptions> = {
+const DEFAULT_STYLES: Partial<BoxOptions> = {
     border: true,
     borderColor: DefaultTheme.mauve,
     borderStyle: "heavy",
@@ -13,16 +14,16 @@ type BorderBoxProps = {
     style?: Partial<BoxOptions>;
 };
 
-const Box = (props: React.PropsWithChildren<BorderBoxProps>) => {
+const Box = (props: PropsWithChildren<BorderBoxProps>) => {
     const { focus = false, style = {} } = props;
 
     return (
         <box
-            focused={focus}
             style={{
-                ...DefaultStyles,
+                ...DEFAULT_STYLES,
                 ...style,
             }}
+            focused={focus}
         >
             {props.children}
         </box>

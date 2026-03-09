@@ -547,9 +547,11 @@ function Pong() {
 
     useKeyboard((key: KeyEvent) => {
         const keyHandler = game.keyboardManager.keyHandler.get(key.name as KeysType);
-        if (keyHandler) {
-            keyHandler();
+        if (!keyHandler) {
+            return;
         }
+
+        keyHandler();
     });
 
     useEffect(() => {

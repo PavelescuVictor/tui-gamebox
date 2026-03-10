@@ -1,4 +1,4 @@
-import MainTitle from 'core/components/MainTitle';
+import MainTitle from 'library/components/MainTitle';
 import MainMenu from '../MainMenu';
 import Header from '../Header';
 import Footer from '../Footer/Footer';

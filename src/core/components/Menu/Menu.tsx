@@ -1,8 +1,8 @@
-import type { SelectOption, SelectRenderableOptions } from '@opentui/core';
+import type { BoxOptions, SelectOption } from '@opentui/core';
 import { DefaultTheme } from 'core/themes';
 
 type MenuProps = {
-    style?: Partial<SelectRenderableOptions>;
+    style?: Partial<BoxOptions>;
     options: SelectOption[];
     selectedIndex: number,
     onChange: (index: number) => void,
@@ -23,7 +23,7 @@ const Menu = (props: MenuProps) => {
     return <box style={style}>
         <select
             style={{
-                width: "20%",
+                width: "100%",
                 height: options.length,
                 margin: "auto",
                 showDescription: false,

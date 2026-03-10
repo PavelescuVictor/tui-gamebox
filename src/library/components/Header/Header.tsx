@@ -8,9 +8,6 @@ const Header = () => {
     return <box style={{ flexDirection: "row", margin: "auto", gap: 1 }}>
         <text>Seek the time to be</text>
         <KeyboardAnimatedWord steps={steps} resetSteps={resetSteps} />
-        <text style={{ fg: DefaultTheme.peach }}>
-            <strong>|</strong>
-        </text>
         <text>Even in your</text>
         <text style={{ fg: DefaultTheme.teal }}>
             {">_"}<em>Terminal</em>

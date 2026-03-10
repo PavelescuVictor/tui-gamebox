@@ -30,7 +30,12 @@ const MainMenu = () => {
         setSelectedIndex(index);
     }
 
-    return <box style={{ flexGrow: 1, paddingTop: 3 }}>
+    return <box style={{
+            width: "15%",
+            margin: "auto",
+            flexGrow: 1,
+            paddingTop: 1,
+    }}>
         <Menu
             options={MainMenuOptions}
             onChange={onChange}
